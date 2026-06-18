@@ -134,6 +134,13 @@ button {
             height: calc(100% - 20px);
             margin-bottom: 20px;
             position: relative;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, border-color 0.3s ease-in-out;
+
+            &:hover {
+                transform: translateY(-8px);
+                box-shadow: 0 18px 35px rgba(0, 0, 0, 0.18);
+                border-color: #375c92;
+            }
 
             span {
                 position: absolute;
@@ -250,6 +257,18 @@ button {
     background: #375c92 !important;
     color: #fff !important;
     padding: 22px 20px !important;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+        background: #2b496f !important;
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px rgba(55, 92, 146, 0.45);
+    }
+
+    &:active {
+        transform: translateY(-1px);
+    }
 }
 
 .section-3 {
