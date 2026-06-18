@@ -261,7 +261,8 @@ button {
 
     &:hover,
     &:focus {
-        background: #2b496f !important;
+        background: #ff751f !important;
+        color: #fff !important;
         transform: translateY(-4px);
         box-shadow: 0 12px 24px rgba(55, 92, 146, 0.45);
     }
