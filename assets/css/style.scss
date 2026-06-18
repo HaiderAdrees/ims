@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+
+$primary: #4E18AE;
+$gradient: linear-gradient(271.43deg, #BF1BF0 -41.55%, #4E32E7 129.71%);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span,
+b,
+small,
+strong,
+body,
+button,
+input,
+optgroup,
+select,
+textarea {
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+a,
+i,
+.btn {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+textarea,
+input,
+.navbar-toggler,
+button {
+    outline: 2px solid transparent;
+    box-shadow: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $primary;
+}
+
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.layout {
+    max-width: 1060px;
+    width: 100%;
+    margin: 0px auto;
+
+    .hero-section {
+        .heading {
+            width: 100%;
+            min-height: 200px;
+            background-image: url(../images/2.png);
+            background-position: bottom;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            h3 {
+                font-size: 48px;
+                color: #000;
+                text-align: center;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            h6 {
+                margin-bottom: 0px;
+                color: #ff3131;
+                font-weight: 600;
+                font-size: 32px;
+            }
+        }
+    }
+
+    .hero-cards {
+        width: 100%;
+        padding: 36px;
+        background: #fff;
+        position: relative;
+
+        .bottom-img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 0;
+            width: 280px;
+        }
+
+        .inner-card {
+            padding: 55px 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../images/6.png);
+            background-size: 100%;
+            background-position: top;
+            background-repeat: no-repeat;
+            border: 2px solid #000;
+            height: calc(100% - 20px);
+            margin-bottom: 20px;
+            position: relative;
+
+            span {
+                position: absolute;
+                font-size: 32px;
+                font-weight: 600;
+                top: 0px;
+                left: 16px;
+                z-index: 9;
+            }
+
+            h4 {
+                font-size: 28px;
+                font-weight: 600;
+                margin-bottom: 40px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 17px;
+                margin-bottom: 0px;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.second-section {
+    width: 100%;
+    position: relative;
+
+    .bottom-right {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 365px;
+    }
+
+    .heading {
+        width: 100%;
+        min-height: 200px;
+        background-image: url(../images/2.png);
+        background-position: bottom;
+        background-size: cover;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 48px;
+            font-weight: 600;
+            color: #000;
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            margin-bottom: 0px;
+            font-weight: 600;
+            color: #ff3131;
+            font-size: 32px;
+            font-weight: 600;
+        }
+    }
+
+    .content-section {
+        padding: 60px 20px 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+
+        h3 {
+            font-size: 30px;
+            text-align: center;
+            font-weight: 600;
+            margin-bottom: 30px;
+
+            span {
+                color: #5170ff;
+            }
+        }
+
+        .bottom {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 40px;
+            justify-content: center;
+
+            img {
+                width: 80px;
+            }
+
+            p {
+                margin-bottom: 0px;
+                font-size: 30px;
+                font-weight: 600;
+                font-weight: 600;
+                color: #ff3131;
+            }
+        }
+    }
+}
+
+
+.btn-primary {
+    width: fit-content !important;
+    font-size: 28px;
+    border: none;
+    border-radius: 0px;
+    font-weight: 600;
+    background: #375c92 !important;
+    color: #fff !important;
+    padding: 22px 20px !important;
+}
+
+.section-3 {
+    width: 100%;
+    padding: 50px 0px 60px;
+    background-image: url(../images/4.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h6 {
+        font-size: 32px;
+        font-weight: 600;
+        margin-bottom: 15px;
+
+        span {
+            font-weight: 600;
+            color: #ff751f;
+
+        }
+    }
+
+    p {
+        margin: 30px 0px;
+        font-weight: 600;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .number {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+
+        .call {
+            height: 60px;
+            border-radius: 100px;
+        }
+
+        h4 {
+            font-size: 38px;
+        }
+    }
+
+    small {
+        font-weight: 600;
+        font-size: 25px;
+    }
+
+    .bottom {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+
+        p {
+            font-size: 23px;
+            font-weight: 300;
+            text-align: center;
+            color: #000;
+        }
+    }
+}
+
+.section-4 {
+    width: 100%;
+
+    img {
+        width: 100%;
+    }
+}
