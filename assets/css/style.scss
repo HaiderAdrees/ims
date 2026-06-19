@@ -321,6 +321,18 @@ button {
     small {
         font-weight: 600;
         font-size: 25px;
+
+        a {
+            color: inherit;
+            text-decoration: underline;
+            transition: color 0.3s ease, opacity 0.3s ease;
+            text-decoration: none;
+
+            &:hover {
+                color: #c0392b;
+                opacity: 0.85;
+            }
+        }
     }
 
     .bottom {
